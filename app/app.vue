@@ -1,5 +1,10 @@
+<script setup lang="ts">
+import SvgSprite from "~/components/SvgSprite.vue";
+</script>
+
 <template>
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
+  <SvgSprite />
 </template>
