@@ -1,0 +1,44 @@
+.nav {
+
+  & .list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    & .link {
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: transparent;
+      color: #A7A3AE;
+      border-radius: 12px;
+      transition: all 0.3s;
+
+      & > span {
+        color: inherit;
+        font-size: 1rem;
+      }
+
+      &:hover {
+        background: #2D183E;
+      }
+
+      & svg {
+        color: inherit;
+        width: 20px;
+        height: 20px;
+      }
+
+      &.is-active {
+        background: #2D183E;
+        color: #fff;
+
+        & > svg {
+          color: #AC55F7;
+        }
+
+      }
+    }
+  }
+}

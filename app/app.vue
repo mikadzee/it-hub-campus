@@ -8,3 +8,8 @@ import SvgSprite from "~/components/SvgSprite.vue";
   </NuxtLayout>
   <SvgSprite />
 </template>
+
+<style lang="less">
+@import "./assets/styles/main.less";
+
+</style>
