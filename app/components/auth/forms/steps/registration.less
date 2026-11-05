@@ -1,0 +1,134 @@
+.registration {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+
+  & .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & h2 {
+      margin: 0;
+      color: #202129;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    & p {
+      margin: 0;
+      color: #62626C;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+
+    & .field {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+
+      & label {
+        color: #202129;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+
+    & .hint {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      background: #F2F3F5;
+      border-radius: 8px;
+      color: #62626C;
+      font-size: 15px;
+      line-height: 1.5;
+
+      &::before {
+        content: "i";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #202129;
+        border-radius: 50%;
+        color: #202129;
+        font-size: 11px;
+        font-weight: 600;
+      }
+    }
+
+    & .password-hint {
+      margin-top: -10px;
+      color: #62626C;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    & > button[type="submit"] {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 15px 20px;
+      margin-top: 4px;
+      background: #202129;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      color: #FFFFFF;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        background: #343640;
+      }
+
+      &:active {
+        transform: scale(0.99);
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+
+    & .back {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 4px;
+      background: transparent;
+      border: none;
+      color: #62626C;
+      font-family: inherit;
+      font-size: 16px;
+      cursor: pointer;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #202129;
+      }
+    }
+  }
+}
