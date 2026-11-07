@@ -42,10 +42,5 @@ export const pages:Page[] = [
     icon: 'icon-bell',
     path: '/notifications'
   },
-  {
-    id: 7,
-    name: 'Профиль',
-    icon: 'icon-profile',
-    path: '/profile'
-  }
+
 ];

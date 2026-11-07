@@ -2,7 +2,7 @@
   <nav class="nav">
     <ul class="list">
       <li v-for="page in pages">
-        <NuxtLink class="link"
+        <NuxtLink class="link-aside"
                   :to="page.path"
                   :title="page.name"
                   :key="page.id"
